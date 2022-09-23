@@ -65,7 +65,7 @@
   <p v-if="description"></p>
   <p v-else color="red">la description n'est pas renseigné</p>
 </div>
-
+ b
 </template>
 
 <style>
