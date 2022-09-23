@@ -6,9 +6,7 @@
         montant : null,
         description : null,
         categorie : ("(à venir)"),
-        list : [
-
-        ]
+        list : []
       }
     },
     methods : {
