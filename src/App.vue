@@ -1,31 +1,32 @@
 <script setup>
+
 </script>
 
 
 <template>
 
 <div class="table">
-  <table>
+  <table border="1">
     <tr>
-      <th>Date</th>
-      <th>Montant</th>
-      <th>Description</th>
-      <th>Catégorie</th>
+      <th>Date</th><th>Montant</th><th>Description</th><th>Catégorie</th>
+    </tr>
+    <tr>
     </tr>
   </table>
 
   <form action="" method="get" class="form">
     <label>Date : </label>
-    <input type="date" name="date" id="date" required><br>
+    <input v-model="date" type="date" name="date" id="date" required><br>
     <label>Montant : </label>
     <input type="text" name="montant" id="montant" required><br>
     <label>Description : </label>
     <input type="text" name="description" id="description" required><br>
-    <input type="submit" value="Enregistrer">
+    <input type="submit" value="save">
   </form>
 </div>
 
 </template>
 
 <style>
+
 </style>
