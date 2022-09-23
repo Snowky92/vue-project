@@ -13,6 +13,10 @@
     },
     methods : {
       save(){
+        if (!this.date || !this.montant || !this.categorie){
+          this.error = "Vous n'avez pas remplis tout les champs"
+          return;
+        }
         this.list.push({
           date : this.date,
           montant : this.montant,
@@ -56,7 +60,12 @@
     Montant : <input v-model="montant"><br>
     Description : <input v-model="description"><br>
     <button class="bouton" v-on:click="save">save</button>
-
+  <p v-if="date"></p>
+  <p v-else color="red">la date n'est pas renseigné</p>
+  <p v-if="montant"></p>
+  <p v-else color="red">le montant n'est pas renseigné</p>
+  <p v-if="description"></p>
+  <p v-else color="red">la description n'est pas renseigné</p>
 </div>
 
 </template>
